@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/dineritos">
+
+    <TextView
+        android:id="@+id/textUltimActualizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/ultima_actualizacion"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/textActualizacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:text="@string/ultima_actualizacion"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUltimActualizacion" />
+
+    <TextView
+        android:id="@+id/textMonedaBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:text="@string/moneda_base"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textActualizacion" />
+
+    <SeekBar
+        android:id="@+id/cambioBarra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="36dp"
+        android:max="50000"
+        android:min="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaBase"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/textMonedaEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_euro"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaBase"
+        android:background="@color/white"/>
+
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/ue"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaEuro"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaEuro" />
+
+    <TextView
+        android:id="@+id/textMonedaDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_dolar"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaEuro"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/usa"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaDolar"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaDolar" />
+
+    <TextView
+        android:id="@+id/textMonedaLibra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_libra"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaDolar"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/gbp"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaLibra"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaLibra" />
+
+    <TextView
+        android:id="@+id/textMonedaKrone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_krone"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaLibra"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/noruega"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaKrone"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaKrone" />
+
+    <TextView
+        android:id="@+id/textMonedaDinar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_dinar"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaKrone"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/bipbop"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaDinar"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaDinar" />
+
+    <TextView
+        android:id="@+id/textMonedaUpeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_upeso"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaDinar"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/uru"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaUpeso"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaUpeso" />
+
+    <TextView
+        android:id="@+id/textMonedaGourde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_gourde"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaUpeso"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/haiti"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaGourde"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaGourde" />
+
+    <TextView
+        android:id="@+id/textMonedaBReal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_breal"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaGourde"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/brasil"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaBReal"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaBReal" />
+
+    <TextView
+        android:id="@+id/textMonedaBurundi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneda_emirates"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonedaBReal"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:src="@drawable/burundi"
+        app:layout_constraintEnd_toStartOf="@+id/textMonedaBurundi"
+        app:layout_constraintHorizontal_bias="0.911"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textMonedaBurundi" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
