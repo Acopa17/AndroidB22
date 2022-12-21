@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ProyectoAndroidMapsAbel</string>
+    <string name="title_activity_maps">GuardarLatitudLongitud</string>
+    <string name="buttonGuardar">Guardar</string>
+    <string name="buttonBorrar">Borrar Todo</string>
+</resources>
